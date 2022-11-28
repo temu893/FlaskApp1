@@ -6,7 +6,7 @@ RUN pip3 install Flask
 WORKDIR /app
 ENTRYPOINT [ "python3" ]
 COPY . .
-CMD ["/app.py", "python3", "-m", "flask", "run"]
+CMD ["./app.py", "python3", "-m", "flask", "run"]
 
 # FROM python:3.10-slim-buster
 # ADD . /app
